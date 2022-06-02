@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VUE</title>
+  <meta name="description" content="VUE">
+</head>
+<body>
+<h1> v-on methods</h1>
+<div id="app">
+  <ol>
+    <li v-for="todoItem in todos">
+      {{ todoItem }}
+    </li>
+  </ol>
+  new todo: <input v-model="newTodo"/>
+  <button v-on:click="addTodo">ADD</button>
+<!--  <button @click="addTodo">ADD</button>-->
+</div>
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+  let app = {
+    data() {
+      return {
+        todos: [],
+        newTodo: ''
+      }
+    },
+    methods: {
+      addTodo: function () {
+        this.todos.push(this.newTodo);
+      }
+    }
+  };
+  Vue.createApp(app).mount("#app");
+
+</script>
+</body>
+</html>

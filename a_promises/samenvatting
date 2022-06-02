@@ -1,0 +1,28 @@
+-------------------------------------------------
+Promise
+-------------------------------------------------
+BEGRIP              BESCHRIJVING
+Promise             a JavaScript object that links producing code and consuming code
+Producing code      code that can take some time
+Consuming code      code that must wait for the result
+
+-------------------------------------------------
+Chaining
+-------------------------------------------------
+= Meerdere then’s naast elkaar
+
+OPTIE       HET RESULTAAT VE PROMISE WORDT GECHAINED AAN EEN
+1	        niet-asynchrone actie
+2	        promise
+
+-------------------------------------------------
+Async en Await
+-------------------------------------------------
+-	Enkel binnen een async function mag await gebruikt worden (!!)
+-	Await wacht op het resultaat van een promise
+-	Veel beter leesbare code!
+
+-------------------------------------------------
+Axios vs Fetch
+-------------------------------------------------
+Axios controleert automatisch als de respond van de http request OK is

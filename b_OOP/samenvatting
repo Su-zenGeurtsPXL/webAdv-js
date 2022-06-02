@@ -1,0 +1,17 @@
+- Elk object is verbonden met een prototype
+    new: gebruik een function om een object te maken
+    Object.create: maak een object met als prototype een bestaand object
+
+- Eenvoudigere syntax adhv classes
+
+-------------------------------------------------
+Opmerkingen
+-------------------------------------------------
+- Wanneer een function deel uitmaakt van een object dan verwijst 'this' in deze function naar dit object
+- underscore ‘_’ voor veld om aan te duiden dat het niet de bedoeling is om het veld te wijzigen buiten het object
+- Private class fields (# -> ES2019)
+
+-------------------------------------------------
+BRON
+-------------------------------------------------
+Link: https://eloquentjavascript.net/Eloquent_JavaScript.pdf

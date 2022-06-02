@@ -1,0 +1,29 @@
+-------------------------------------------------
+Nieuw project
+-------------------------------------------------
+$ npm init
+    - maakt package.json aan
+    - ’lege’ beschrijving van het project
+
+$ npm install prompt
+    - Alternatief: $ npm i prompt
+    - installeert de dependecy prompt in de map node_modules/
+    - beschrijft de dependency in package.json (en package-lock.json)
+
+-------------------------------------------------
+Bestaand project
+-------------------------------------------------
+$ npm install
+    - Alternatief: $ npm i
+    - installeert de dependecy prompt in node_modules
+    - In een git-repository: nooit node_modules (.gitignore)
+
+-------------------------------------------------
+Alle dependencies installeren
+-------------------------------------------------
+$ npm install
+
+-------------------------------------------------
+Bron
+-------------------------------------------------
+Link: https://www.npmjs.com/package/prompt

@@ -1,0 +1,33 @@
+-------------------------------------------------
+Commit doen
+-------------------------------------------------
+$ git add [file/folder]
+$ git commit -m "[message]"
+$ git push origin main
+
+-------------------------------------------------
+Unstaged files zien
+-------------------------------------------------
+$ git diff --cached
+
+-------------------------------------------------
+Unstaged files verwijderen
+-------------------------------------------------
+$ git reset [file]
+
+-------------------------------------------------
+Commit verwijderen
+-------------------------------------------------
+$ git reset --hard [commit]
+$ git push --force origin main
+
+-------------------------------------------------
+Commit message wijzigen
+-------------------------------------------------
+1. Ga naar de directory dat de commit bevat
+    $ cd [dir dat de commit bevat]
+2. Doe het commando om de commit te wijzigen
+    $ git commit --amend
+3. Wijzig de gewenste informatie in de editor.
+4. Druk op ESC om de editor te verlaten.
+5. Type ":wq" en druk nadien op ENTER om de wijziging op te slaan en te exiten.

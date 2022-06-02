@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <greeter name="Tim" background-color="red"></greeter>
+    <greeter name="Sofie" background-color="green"></greeter>
+</div>
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+    let app = Vue.createApp({});
+    app.component('greeter', {
+        props: ['backgroundColor', 'name'],
+        computed: {
+            computedStyle() {
+                return `background-color: ${this.backgroundColor}`;
+            }
+        },
+        template: '<div v-bind:style="computedStyle">Hello {{ name }}</div>'
+    });
+    app.mount('#app');
+</script>
+</body>
+</html>
+
+<!--1. parent-copmonent (app) aangemaakt via Vue.createApp-->
+<!--2. child-component (greeter) aangemaakt via app.component, -->
+<!--    ‘intern’ template-->
+<!--props: name, backgroundColor-->
+<!--opmerking: backgroundColor (js) → background-color (template)-->

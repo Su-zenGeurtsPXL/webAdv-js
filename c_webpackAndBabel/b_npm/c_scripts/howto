@@ -1,0 +1,22 @@
+!!! script zijn gedefinieerd in package.json !!!
+
+-------------------------------------------------
+Alle dependencies installeren
+-------------------------------------------------
+$ npm install
+
+-------------------------------------------------
+Het script build uitvoeren (webpack)
+-------------------------------------------------
+$ npm run build
+
+-------------------------------------------------
+Het script test runnen (jest)
+-------------------------------------------------
+$ npm run test
+
+-------------------------------------------------
+Het script serve runnen (webpack-dev-server)
+-------------------------------------------------
+$ npm run serve
+//daarna in de browser localhost:8080 ingeven

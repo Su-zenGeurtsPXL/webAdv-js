@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <p v-if="timeInHours < 12">Good morning</p>
+    <p v-else>Hello</p>
+    <p> The time is {{ timeInHours }} : {{ timeInMinutes }}</p>
+</div>
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+    let app = {
+        data() {
+            return {
+                timeInHours: new Date().getHours(),
+                timeInMinutes: new Date().getMinutes()
+            }
+        }
+    };
+    Vue.createApp(app).mount("#app");
+</script>
+</body>
+</html>

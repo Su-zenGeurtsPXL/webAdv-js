@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE - if/else</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <p v-if="isMorning">Good morning</p>
+    <p v-else>Hello</p>
+</div>
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+    let timeInHours = new Date().getHours();
+    let app = {
+        data() {
+            return {
+                isMorning: timeInHours < 12
+            }
+        }
+
+        // OF
+        // data : function() {
+        //     return {
+        //         isMorning: timeInHours < 12
+        //     }
+        // }
+    };
+    Vue.createApp(app).mount("#app");
+</script>
+</body>
+</html>

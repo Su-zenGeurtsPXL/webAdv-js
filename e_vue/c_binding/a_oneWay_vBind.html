@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VUE</title>
+  <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+  <p v-bind:style="myStyle">Hello {{ name }}</p>
+  <img v-bind:src="myImage"/>
+
+<!--  OF  -->
+<!--  <p :style="myStyle">Hello {{ name }}</p>
+      <img :src="myImage"/>                             -->
+</div>
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+  let app = {
+    data() {
+      return {
+        name: 'Tim',
+        myStyle: 'color:red;' +
+                'background-color:black;',
+        myImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/220px-Vue.js_Logo_2.svg.png'
+
+      }
+    }
+  };
+  Vue.createApp(app).mount("#app");
+</script>
+</body>
+</html>

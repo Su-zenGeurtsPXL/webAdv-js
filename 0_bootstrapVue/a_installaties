@@ -1,0 +1,33 @@
+https://bootstrap-vue.org/docs/components/navbar
+-------------------------------------------------
+Requirements
+-------------------------------------------------
+REQ             RECOMMENDED     LINK                    COMMAND
+Vue.js          v2.6.12         vuejs.org               $ npm i vue
+Bootstrap       v4.6.1          getbootstrap.com        $ npm i bootstrap@5.2.0-beta1
+Popper.js       v1.16.1         popper.js.org           $ npm i @popperjs/core
+PortalVue       v2.1.7          portal-vue.linusb.org   $ npm i --save portal-vue
+jQuery          Not required    jquery.com              $ npm i jquery
+
+-------------------------------------------------
+Verkrijg de laatste benodigde versies
+-------------------------------------------------
+$ npm i vue bootstrap bootstrap-vue
+
+-------------------------------------------------
+App.js
+-------------------------------------------------
+// app.js
+import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+// Import Bootstrap and BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+
+

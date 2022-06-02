@@ -1,0 +1,16 @@
+-------------------------------------------------
+try … catch
+-------------------------------------------------
+- probeer een stuk code uit te voeren
+- indien error: executie van 'try' wordt gestaakt
+- 'catch' wordt uitgevoerd
+
+-------------------------------------------------
+Throw
+-------------------------------------------------
+- werp een error op
+
+-------------------------------------------------
+BRON
+-------------------------------------------------
+Link: https://eloquentjavascript.net/Eloquent_JavaScript.pdf

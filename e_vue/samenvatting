@@ -1,0 +1,53 @@
+-------------------------------------------------
+Data (js)
+-------------------------------------------------
+=   beschikbare gegevens
+
+-------------------------------------------------
+Template (html)
+-------------------------------------------------
+=   te tonen op het scherm
+
+Directive           = logica die bepaalt hoe data getoond w.      v-if, v-else, v-for
+Interpolation       = print gegevens in een element               Mustache syntax: {{ name }}
+Binding             = plaats gegevens in een attribuut            v-bind, v-model
+
+-------------------------------------------------
+Props (js)
+-------------------------------------------------
+= i.p.v. data
+
+!! Child en parent-components: gegevens doorgeven van parent naar child
+
+-------------------------------------------------
+Vuex
+-------------------------------------------------
+= data beschikbaar maken in meerdere componenten
+= ’Single source of truth’
+
+-------------------------------------------------
+Vue-router
+-------------------------------------------------
+= path (url) overeen laten komen met een component
+
+-------------------------------------------------
+Object store (Single source of truth)
+-------------------------------------------------
+= één keer de cruciale data centraal bewaren in een object store
+    > Meerdere componenten spreken deze object store aan
+
+!!! Alle fetch code komt in de object store te staan !!!
+    > in store/index.js
+    > niet meer verspreid over de componenten
+
+-------------------------------------------------
+$emit
+-------------------------------------------------
+= CHILD naar PARENT
+
+-------------------------------------------------
+Voordelen VUEX
+-------------------------------------------------
++ Object store (Single source of truth)
++ Alle fetch-calls, url in één bestand (store/index.js)
++ $emit is niet meer nodig

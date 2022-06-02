@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="name in getUppercaseNames()">{{ firstSymbolOnly(name) }} is for {{ name }}</li>
+    </ul>
+</div>
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+    let app = {
+        data() {
+            return {
+                names: ['jan', 'tim', 'sofie']
+            }
+        },
+        methods:{
+            getUppercaseNames(){
+                return this.names.map(x => x.toUpperCase());
+            },
+            firstSymbolOnly(text){
+                return text[0];
+            }
+        }
+    };
+    Vue.createApp(app).mount("#app");
+</script>
+</body>
+</html>
+

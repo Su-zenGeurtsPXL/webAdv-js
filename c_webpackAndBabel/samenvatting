@@ -1,0 +1,34 @@
+-------------------------------------------------
+Babel
+-------------------------------------------------
+= JavaScript Compiler
+
+-------------------------------------------------
+Webpack
+-------------------------------------------------
+= a powerful open-source bundler and preprocessor
+
+~ Stap 1: cats.js ~
+var cats = ['dave', 'henry', 'martha'];
+module.exports = cats;
+
+~ Stap 2: app.js ~
+var cats = require('./cats.js');
+console.log(cats);
+
+~ Stap 3: app.bundle.js ~
+!function(r)[functiont(o)(if(n[o])returnn[o].exports;
+var ean[o]=(t:0,l: !1, exports: ());return r[o].call(
+e.exports,e,e. exports,t),e. t=!0,e. exports]var n=();
+returnt.mar,t.cen,t.p="*,t(t.s=1))([function(r,t)(
+var n=["dave" ,"henry", "martha"];r.exports=n], function
+(r,t,n)(cats=n(0),console.Log(cats)]]);
+
+OVERGANG    BESCHRIJVING
+1 => 2      Reads the entry point and analyzes its dependencies and so on
+2 => 3      Bundles the entry point and all ites dependecties into a single file
+
+-------------------------------------------------
+Opmerkingen
+-------------------------------------------------
+- node_modules moet niet in een project op github staan => .gitignore

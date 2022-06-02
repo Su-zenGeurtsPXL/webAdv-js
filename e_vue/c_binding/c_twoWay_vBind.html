@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VUE</title>
+  <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+  message = {{message}}<br>
+  <input v-bind:value="message" @input="updateMessage" />
+<!--  <input v-bind:value="message" v-on:input="updateMessage" />-->
+</div>
+
+<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+<script>
+  let app = {
+    data() {
+      return {
+        message: ''
+      }
+    },
+    methods: {
+      updateMessage: function (event) {
+        this.message=event.target.value;
+      }
+    }
+
+  };
+  Vue.createApp(app).mount("#app");
+
+</script>
+</body>
+</html>
+
+
